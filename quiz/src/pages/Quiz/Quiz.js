@@ -302,7 +302,7 @@ function Quiz () {
     console.log('CORTE')
 
     console.log(newPergunta)
-  },[])
+  }, [])
 
   const selecionarResposta = resposta => {
     if (!mostrarRespostaCorreta) {
@@ -352,6 +352,29 @@ function Quiz () {
   const salvar = async _pontos => {
     try {
       const id = parseInt(localStorage.getItem('idJogador')) // Substitua 1 pelo ID do jogador que deseja atualizar
+      const nome = localStorage.getItem('nome')
+      const email = localStorage.getItem('email')
+      const empresa = localStorage.getItem('empresa')
+      const telefone = localStorage.getItem('telefone')
+
+      var data = new Date()
+      var tbClientes = localStorage.getItem('tbClientes')
+      tbClientes = JSON.parse(tbClientes)
+
+      if (tbClientes == null) tbClientes = []
+
+      var cliente = JSON.stringify({
+        Nome: nome,
+        Email: email,
+        Empresa: empresa,
+        Telefone: telefone,
+        Pontos: _pontos,
+        Date: data
+      })
+
+      tbClientes.push(cliente)
+      localStorage.setItem('tbClientes', JSON.stringify(tbClientes))
+
       const response = await axios.put(
         `http://localhost:3001/cadastros/${id}`,
         {

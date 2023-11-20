@@ -40,6 +40,10 @@ function Cadastro () {
           telefone: inputs.telefone
         })
         localStorage.setItem('idJogador', response.data.id)
+        localStorage.setItem('nome', inputs.name)
+        localStorage.setItem('empresa', inputs.empresa)
+        localStorage.setItem('email', inputs.email)
+        localStorage.setItem('telefone', inputs.telefone)
         navigate('/quiz')
       } catch (error) {
         navigate('/erro')

@@ -14,7 +14,7 @@ cd C:\laragon\www\configuracao\app
 start /b fecharApp.exe
 
 cd "C:\Program Files (x86)\Google\Chrome\Application"
-start /b chrome --kiosk --incognito --disable-component-update --safebrowsing-disable-auto-update --disable-notifications --disabled-new-style-notification --ash-hide-notifications-for-factory --start-maximized --disable-backing-store-limit --enable-audio-focus --enable-media-suspend --process-per-tab --windows10-custom-titlebar --disable-pinch --overscroll-history-navigation=0 file:///C:/laragon/www/carregar.html
+start /b chrome --kiosk --disable-component-update --safebrowsing-disable-auto-update --disable-notifications --disabled-new-style-notification --ash-hide-notifications-for-factory --start-maximized --disable-backing-store-limit --enable-audio-focus --enable-media-suspend --process-per-tab --windows10-custom-titlebar --disable-pinch --overscroll-history-navigation=0 file:///C:/laragon/www/carregar.html
 
 cd C:\laragon\www\quiz
 npm start
