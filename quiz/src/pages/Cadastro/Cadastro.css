@@ -1,0 +1,391 @@
+.keyboard {
+  position: absolute;
+  z-index: 2;
+  width: 70%;
+  left: 15%;
+  /* margin-left: calc(1000px/ 2 * -1); */
+  top: 1472px;
+  opacity: 0;
+  animation: fade 1s 1.0s linear forwards;
+}
+
+.hg-theme-default {
+  background-color: transparent;
+  color: #00335b;
+}
+
+.hg-theme-default .hg-button {
+  background-color: rgba(255, 255, 255, 1);
+  border: solid 2px #00335b;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.hg-button[data-skbtn=".com.br"] {
+  max-width: 110px;
+}
+
+.bloquear-numero {
+  background-color: transparent;
+  width: 842px;
+  height: 64px;
+  position: absolute;
+  z-index: 999;
+  bottom: 299px;
+}
+
+.fundo {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 1400px;
+  background-color: white;
+  box-shadow: 15px 15px 30px #888888;
+  border-radius: 60px;
+  top: 400px;
+}
+
+.text-4 {
+  position: absolute;
+  z-index: 1;
+  left: 376px;
+  left: 95px;
+  top: 450px;
+  font-size: 70px;
+  width: calc(100% - (95px * 2));
+  text-align: center;
+  opacity: 0;
+  animation: slide 0.75s 0s linear forwards;
+  color: #00335b;
+}
+
+.inputs {
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  left: 15%;
+  margin-top: 575px;
+  height: 800px;
+
+}
+
+
+
+input {
+  width: calc(100% - 4px);
+  border: solid 2px #00335b;
+  box-shadow: 20px;
+  height: 120px;
+  border-radius: 120px;
+  text-align: center;
+  font-family: 'VisbyCF-Bold';
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: #00335b;
+  opacity: 0;
+  animation: slide 0.75s 0.5s linear forwards;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: rgb(213, 212, 212);
+}
+
+#unit {
+  width: 100%;
+  border: 0;
+  border: solid 2px #00335b;
+  box-shadow: none;
+  height: 120px;
+  border-radius: 120px;
+  text-align: center;
+  font-family: 'VisbyCF-Bold';
+  font-size: 35px;
+  letter-spacing: 1px;
+  background-color: white;
+  appearance: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-top: 50px;
+  opacity: 0;
+  animation: slide 0.75s 0.75s linear forwards;
+}
+
+#unit::placeholder {
+  color: rgb(213, 212, 212);
+}
+
+#unit:valid {
+  color: var(--darkgreen);
+}
+
+#unit:required:invalid {
+  color: rgb(213, 212, 212);
+}
+
+#unit option[value=""][disabled] {
+  display: none;
+}
+
+.input--error {
+  box-shadow: inset 0px 0px 20px 5px rgba(255, 0, 0, 0.7) !important;
+  /* animation: shake 0.5s ease-in-out !important; */
+}
+
+@keyframes shakeErro {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25%,
+  75% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.custom-arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(30%);
+  font-size: 50px;
+  color: var(--darkgreen);
+  display: none;
+}
+
+#unit:hover+.custom-arrow {
+  color: var(--green);
+}
+
+#unit:focus {
+  border: 0;
+}
+
+#unit::-ms-expand {
+  display: none;
+}
+
+#unit option:nth-child(odd) {
+  background-color: #eee;
+  color: var(--darkgreen);
+}
+
+#unit option:nth-child(even) {
+  background-color: #fff;
+  color: var(--darkgreen);
+}
+
+.btn-cadastro {
+  position: absolute;
+  z-index: 2;
+  background-color: #00335b;
+  width: 50%;
+  text-align: center;
+  height: 120px;
+  line-height: 120px;
+  font-size: 40px;
+  border-radius: 120px;
+  font-family: 'VisbyCF-Bold';
+  left: 25%;
+  top: 1322px;
+  opacity: 0;
+  animation: shake 2s ease infinite 0s, fade 2s 1.5s forwards;
+}
+
+.e2 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  opacity: 0;
+  animation: slide 0.5s 1.0s linear forwards;
+}
+
+/* .termos {
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  bottom: 200px;
+  left: 50px;
+  font-size: 22px;
+  opacity: 0;
+  animation: slide 1s 1.25s linear forwards;
+} */
+
+
+/* Estilos para o checkbox */
+.checkbox-container {
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 652px;
+  padding-left: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  height: 75px;
+  width: 35px;
+  opacity: 0;
+  animation: fade 1s 2.0s forwards;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 2px solid #00335b;
+  border-radius: 10px;
+}
+
+.checkbox-container:hover input~.checkmark {
+  background-color: #fff;
+}
+
+.checkbox-container input:checked~.checkmark {
+  background-color: #00335b;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked~.checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 13px;
+  top: 0px;
+  width: 15px;
+  height: 30px;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  transform: rotate(45deg);
+}
+
+/* Estilos para o texto */
+.termo-text {
+  position: absolute;
+  z-index: 2;
+  margin-left: 10px;
+  font-size: 34px;
+  color: #00335b;
+  margin-top: 0px;
+  margin-left: 80px;
+  line-height: 75px;
+  height: 75px;
+  opacity: 0;
+  animation: fade 1s 2.0s forwards;
+  text-transform: uppercase;
+}
+
+.text--error {
+  color: red;
+  text-shadow: inset 0px 0px 20px 5px rgba(255, 0, 0, 0.7) !important;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: #00335b;
+}
+
+.popup-content {
+  background-color: transparent;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  right: 25%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  margin-top: 185px;
+  width: 50%;
+  background: #00335b;
+  color: var(--white);
+  line-height: 80px;
+  font-family: 'VisbyCF-Bold';
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.popup.show {
+  display: flex;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  border: 0;
+}
+
+.termos-texto {
+  background-color: white;
+  text-align: center;
+  padding: 150px 80px;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.termos {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@keyframes fade {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

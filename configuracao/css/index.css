@@ -1,0 +1,160 @@
+﻿*{
+	padding: 0;
+	margin: 0;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+body{
+	scrollbar-width: none;
+	overflow: hidden;
+	width: 1080px;
+	height: 1920px;
+	font-family: arial;
+}
+.conteudo{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	-ms-zoom: 1.2;
+    -moz-transform: scale(1.2);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(1.2);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(1.2);
+    -webkit-transform-origin: 0 0;
+	
+}
+.btn-engrenagem{
+	position: absolute;
+	width: 25px;
+	top: 10px;
+	left: 10px;
+	opacity: 0.05;
+}
+
+/* login de senha */
+.login-senha{
+	position: absolute;
+	z-index: 1;
+	width: 160px;
+	height: 320px;
+	background-color: rgb(70, 180, 255);
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.img-cadeado{
+	position: absolute;
+	top: 15px;
+	left: 4px;
+	width: 53.5px;
+}
+.txt-senha{
+	position: absolute;
+	color: white;
+	top: 13px;
+	font-size: 16px;
+	font-weight: 700;
+	left: 75px;
+}
+.input-senha{
+	position: absolute;
+	width: 70px;
+	color: rgb(55, 139, 227);
+	font-size: 18px;
+	padding: 3px 5px;
+	top: 40px;
+	left: 65px;
+	border: 0px solid;
+}
+.tabela-numeros{
+	position: absolute;
+	left: 13px;
+	top: 80px;
+}
+.numeros{
+	float: left;
+	background-color: rgb(55, 139, 227);
+	color: white;
+	font-weight: 700;
+	width: 25px;
+	left: 50px;
+	text-align: center;
+	padding: 8px 5px;  
+	margin-right: 14px;
+	margin-bottom: 10px;
+	border-radius: 2px; 
+}
+.btn-fechar{
+	position: absolute;
+	font-weight: 600;
+	background-color: rgb(55, 139, 227);
+	color: white;
+	top: 178px;
+	width: 122px;
+	text-align: center;
+	padding: 6px 5px;
+	border-radius: 2px; 
+}
+.glide{
+	position: absolute;
+	color: white;
+	font-size: 15.5px;
+	bottom: 5px;
+	right: 13px;
+}
+.btn-sim{
+	width: 18px;
+}
+.btn-nao{
+	width: 15px;
+}
+
+/* caixa de opções */
+.opcoes{
+	position: absolute;
+	z-index: 2;
+	background-color: rgb(70, 180, 255);
+	top: 0px;
+	left: 0px;
+	width: 250px;
+	height: 200px;
+	display: none;
+}
+.painel{
+	position: absolute;
+	width: 250px;
+	text-align: center;
+	left: 0px;
+	top: 10px;
+	color: white;
+	font-size: 25.2px;
+}
+.txt-fechar-app{
+	position: absolute;
+	color: white;
+	font-size: 17px;
+	left: 15px;
+	bottom: 78px;
+}
+.btn-fechar-app{
+	position: absolute;
+	font-size: 14px;
+	bottom: 40px;
+	width: 102px;
+	padding: 4px 0px;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 2px;
+	background-color: rgb(55, 139, 227);
+	color: white;
+}
+.btn-fechar-sim{
+	left: 15px;
+}
+.btn-fechar-nao{
+	right: 15px;
+}

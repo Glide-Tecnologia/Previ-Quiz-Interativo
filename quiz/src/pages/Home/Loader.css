@@ -1,0 +1,10 @@
+ .loader-frame {
+   position: absolute;
+   z-index: 999;
+   left: 0;
+   top: 0;
+   width: 310px;
+   height: 390px;
+   border: none;
+   background-color: rgba(0, 0, 0, 0);
+ }

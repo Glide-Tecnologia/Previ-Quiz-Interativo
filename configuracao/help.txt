@@ -1,0 +1,9 @@
+﻿Para adicionar o botão Painel de Controle na aplicação você deve
+colocar esse iframe no body do index:
+
+<iframe style="position: absolute;z-index: 999; left: 0px; top: 0px; width: 310px;height: 390px; border: 0px; background-color: rgba(0,0,0,0);" src="configuracao/"></iframe>
+
+
+Informações do bat
+cd C:/xampp/htdocs/configuracao/app
+start fecharApp.exe

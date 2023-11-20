@@ -1,0 +1,312 @@
+:root {
+  --white: white;
+  --green: #00ff3c;
+  --darkgreen: #005514;
+  --no-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+html {
+  background-color: black;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  width: 1080px;
+  height: 1920px;
+  font-family: 'VisbyCF-Bold';
+  color: var(--white);
+}
+
+@font-face {
+  font-family: 'VisbyCF-Bold';
+  src: url(/public/fonts/VisbyCF-Bold.otf);
+}
+
+@font-face {
+  font-family: 'FoldBoldItalic';
+  src: url(/public/fonts/fold-grotesque-bold-italic-pro.otf);
+}
+
+@font-face {
+  font-family: 'FoldBold';
+  src: url(/public/fonts/fold-grotesque-bold-pro.otf);
+}
+
+@font-face {
+  font-family: 'FoldItalic';
+  src: url(/public/fonts/fold-grotesque-italic-pro.otf);
+}
+
+@font-face {
+  font-family: 'FoldLightItalic';
+  src: url(/public/fonts/fold-grotesque-light-italic-pro.otf);
+}
+
+@font-face {
+  font-family: 'FoldLight';
+  src: url(/public/fonts/fold-grotesque-light-pro.otf);
+}
+
+@font-face {
+  font-family: 'FoldMediumItalic';
+  src: url(/public/fonts/fold-grotesque-medium-italic-pro.otf);
+}
+
+@font-face {
+  font-family: 'FoldMedium';
+  src: url(/public/fonts/fold-grotesque-medium-pro.otf);
+}
+
+@font-face {
+  font-family: 'Fold';
+  src: url(/public/fonts/fold-grotesque-regular-pro.otf);
+}
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+/* CONTEÚDO PADRÃO PARA TODAS ÀS PÁGINAS */
+.bg {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: growAndShrink 8s infinite alternate;
+}
+
+.previ-logo{
+  position: absolute;
+  z-index: 2;
+  right: 25%;
+  width: 50%;
+  top: 80px;
+
+}
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  right: 41px;
+  width: 173px;
+  top: 43px;
+}
+
+.unipar {
+  position: absolute;
+  z-index: 2;
+  left: 65px;
+  width: 246px;
+  top: 99px;
+}
+
+.title-header {
+  position: absolute;
+  z-index: 2;
+  left: 465px;
+  top: 61px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.title-header span {
+  display: inline-block;
+  animation: slide-loop 6s linear infinite;
+}
+
+.title-header span:nth-child(1) {
+  font-size: 58px;
+  line-height: 58px;
+  animation-delay: 0s;
+}
+
+.title-header span:nth-child(3) {
+  font-size: 43px;
+  line-height: 43px;
+  animation-delay: 0.5s;
+}
+
+.title-header span:nth-child(5) {
+  font-size: 38px;
+  line-height: 38px;
+  color: var(--green);
+  animation-delay: 1s;
+}
+
+.title-header span:nth-child(7) {
+  font-size: 37px;
+  line-height: 37px;
+  animation-delay: 1.5s;
+}
+
+.e1 {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.e3 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 58%;
+  opacity: 0;
+  animation: slide 0.5s 0.75s linear forwards;
+}
+
+.e5 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 190px;
+  width: 53%;
+  opacity: 0;
+  animation: slide 0.5s 2.2s linear forwards;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes growAndShrink {
+  0% {
+    transform: scale(1);
+    /* Tamanho normal */
+  }
+
+  100% {
+    transform: scale(1.05);
+    /* Tamanho aumentado em 20% */
+  }
+}
+
+@keyframes shrinkAndGrow {
+  0% {
+    transform: scale(1);
+    /* Tamanho normal */
+  }
+
+  50% {
+    transform: scale(0.8);
+    /* Tamanho aumentado em 20% */
+  }
+
+  100% {
+    transform: scale(1);
+    /* Tamanho aumentado em 20% */
+  }
+}
+
+@keyframes fade {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  5% {
+    transform: translateX(-5px);
+  }
+
+  10% {
+    transform: translateX(5px);
+  }
+
+  15% {
+    transform: translateX(-5px);
+  }
+
+  20% {
+    transform: translateX(5px);
+  }
+
+  25% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-loop {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  5% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  81% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

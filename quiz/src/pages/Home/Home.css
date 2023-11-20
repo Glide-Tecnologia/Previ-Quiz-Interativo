@@ -1,0 +1,202 @@
+.text-1,
+.text-2,
+.text-3 {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+
+.text-1 {
+  left: 376px;
+  left: 95px;
+  top: 274px;
+  top: 430px;
+  font-size: 50px;
+  width: calc(100% - (95px * 2));
+  text-align: left;
+  animation: slide 0.75s 0s linear forwards;
+}
+
+.text-1 span {
+  color: var(--green);
+}
+
+.text-2 {
+  font-family: 'FoldBold';
+  left: 95px;
+  top: 539px;
+  top: 540px;
+  font-size: 75px;
+  font-size: 55px;
+  width: calc(100% - (95px * 2));
+  text-align: left;
+  animation: slide 0.75s 0.25s linear forwards;
+}
+
+.text-3 {
+  left: 95px;
+  top: 888px;
+  top: 720px;
+  font-size: 71px;
+  font-size: 50px;
+  width: calc(100% - (95px * 2));
+  text-align: left;
+  animation: slide 0.75s 0.5s linear forwards;
+}
+
+.desc-1,
+.desc-2 {
+  position: absolute;
+  z-index: 3;
+  width: calc(314px - (25px * 2));
+  bottom: 35px;
+  background: rgba(0, 85, 20, 0.7);
+  height: calc(175px - (25px * 2));
+  padding: 25px;
+}
+
+.desc-1 {
+  text-align: right;
+  left: 0px;
+  opacity: 0;
+  animation: slide 0.5s 2.4s linear forwards;
+}
+
+.desc-2 {
+  right: 0px;
+  opacity: 0;
+  animation: slide-right 0.5s 2.4s linear forwards;
+}
+
+.desc-1__name,
+.desc-2__name {
+  font-size: 16px;
+}
+
+.desc-1__name span,
+.desc-2__name span {
+  font-family: 'FoldBold';
+  font-size: 24px;
+}
+
+.desc-1__person,
+.desc-2__person {
+  font-family: 'FoldMediumItalic';
+  color: var(--green);
+  font-size: 18px;
+}
+
+.desc-1 hr,
+.desc-2 hr {
+  background-color: var(--green);
+  border-color: var(--green);
+  border-width: 2px;
+  border-style: solid;
+  margin: 6px 0;
+  width: 100%;
+}
+
+.people-1 {
+  position: absolute;
+  z-index: 2;
+  width: calc(627px * 0.9);
+  bottom: -202px;
+  left: 0px;
+  opacity: 0;
+  animation: slide-bottom 0.5s 1.4s linear forwards;
+}
+
+.people-2 {
+  position: absolute;
+  z-index: 1;
+  width: 691px;
+  width: calc(691px * 0.9);
+  bottom: -442px;
+  right: 0px;
+  opacity: 0;
+  animation: slide-right 0.5s 1.4s linear forwards;
+}
+
+.element-1 {
+  position: absolute;
+  z-index: 2;
+  width: 248px;
+  width: calc(248px * 0.9);
+  bottom: 703px;
+  bottom: 603px;
+  left: 183px;
+  left: 169px;
+  opacity: 0;
+  animation: fade 0.5s 1.8s linear forwards;
+}
+
+.element-2 {
+  position: absolute;
+  z-index: 1;
+  width: 677px;
+  width: calc(677px * 0.9);
+  bottom: -130px;
+  bottom: -172px;
+  right: 136px;
+  right: 116px;
+  opacity: 0;
+  animation: fade 0.5s 1.8s linear forwards;
+}
+
+.touch {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 1150px;
+}
+
+.azul-marinho {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 750px;
+
+}
+
+.titulo-home {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  border-radius: 60px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  top: 800px;
+  font-size: 160px;
+  color: #00335b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'FoldBold';
+  box-shadow: 15px 15px 30px #888888;
+  font-family: 'VisbyCF-Bold';
+  opacity: 0;
+  animation: fade 0.9s 0.1s linear forwards;
+}
+
+.touch__img {
+  filter: invert(1);
+  width: 120px;
+  opacity: 0;
+  animation: shrinkAndGrow 2s infinite alternate, fade 2s 0.75s forwards;
+}
+
+.touch__txt {
+  margin-top: 30px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  opacity: 0;
+  animation: shake 2s ease infinite 0s, fade 2s 1s forwards;
+  font-family: 'VisbyCF-Bold';
+}
+
+.touch__txt span {
+  color: white;
+  font-family: 'VisbyCF-Bold';
+  color: #00335b;
+}
