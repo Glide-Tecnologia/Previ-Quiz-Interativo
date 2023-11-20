@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import './Loader.css'
 import './Home.css'
+import DataVaultComponent from './DataVault'
 
 function Home () {
   const navigate = useNavigate()
@@ -12,6 +13,14 @@ function Home () {
       navigate('/cadastro')
     }, 500)
   }
+
+  const dataFetchedRef = useRef(false)
+
+  useEffect(() => {
+    if (dataFetchedRef.current) return
+    dataFetchedRef.current = true
+    console.log('Teste 1 ')
+  }, [])
 
   return (
     <div
@@ -31,9 +40,8 @@ function Home () {
           <span>TOQUE</span> PARA TESTAR <br></br>SEUS CONHECIMENTOS
         </div>
       </div>
-      <div className='titulo-home'>
-        QUIZ
-      </div>
+      <div className='titulo-home'>QUIZ</div>
+      <DataVaultComponent />
     </div>
   )
 }
