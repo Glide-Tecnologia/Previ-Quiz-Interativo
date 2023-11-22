@@ -5,13 +5,17 @@ import Cadastro from './pages/Cadastro/Cadastro'
 import Quiz from './pages/Quiz/Quiz'
 import Resultado from './pages/Resultado/Resultado'
 import Conclusao from './pages/Conclusao/Conclusao'
+import StandBy from './pages/StandBy/StandBy'
 import './App.css'
 
 function App () {
+
   return (
     <BrowserRouter>
-      <img src='img/bg.jpg' className='bg' />
-      <img src="img/previ_logo.png" className='previ-logo' />
+        <img src='img/bg.jpg' className='bg' />
+        <img src="img/previ_logo.png" className='previ-logo' />
+      
+      
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
@@ -19,6 +23,7 @@ function App () {
         <Route path='/quiz' element={<Quiz />}></Route>
         <Route path='/resultado' element={<Resultado />}></Route>
         <Route path='/conclusao' element={<Conclusao />}></Route>
+        <Route path='/espera' element={<StandBy />}></Route>
       </Routes>
     </BrowserRouter>
   )

@@ -122,11 +122,11 @@ function Cadastro () {
 
     telTemp = telTemp?.replace(/\D/g, '')
     // telTemp = telTemp?.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
-    if (telTemp?.toString().length == 14) {
-      telTemp = telTemp?.replace(/(\d{0,2})(\d{0,4})(\d{0,4})/, '($1) $2-$3')
+    if (telTemp?.toString().length == 11) {
+      // telTemp = telTemp?.replace(/(\d{0,2})(\d{0,4})(\d{0,4})/, '($1) $2-$3')
     }
     else{
-      telTemp = telTemp?.replace(/(\d{0,2})(\d{0,5})(\d{0,4})/, '($1) $2-$3')
+      // telTemp = telTemp?.replace(/(\d{0,2})(\d{0,5})(\d{0,4})/, '($1) $2-$3')
     }
 
     inputs.telefone = telTemp
@@ -134,7 +134,7 @@ function Cadastro () {
     let telArray = inputs.telefone?.split('')
 
     // Limitando o array a 15 caracteres usando splice
-    telArray?.splice(15)
+    telArray?.splice(11)
 
     // Convertendo o array de volta para uma string
     inputs.telefone = telArray?.join('')
@@ -172,8 +172,7 @@ function Cadastro () {
   const onChangeInput = event => {
     console.log('ENTROU')
     const inputVal = event.target.value
-    const formattedValue =
-      inputName === 'telefone' ? formatPhoneNumber(inputVal) : inputVal
+    const formattedValue = inputVal
     console.log('Formato: ' + formattedValue)
     console.log(inputName)
 

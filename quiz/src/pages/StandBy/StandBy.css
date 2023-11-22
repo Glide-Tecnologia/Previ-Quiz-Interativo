@@ -1,0 +1,47 @@
+.conclusao__texto {
+  position: absolute;
+  z-index: 3;
+  top: 553px;
+  left: 15%;
+  width: 70%;
+  font-size: 64px;
+  line-height: 80px;
+  opacity: 0;
+  animation: slide 0.75s 0s linear forwards;
+  color: #00335b;
+  text-align: center;
+}
+
+.conclusao__titulo {
+  color: #00335b;
+  font-size: 99px;
+  margin-bottom: 83px;
+}
+.btn-voltar{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+
+}
+.fundo-espera{
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 800px;
+  background-color: white;
+  box-shadow: 15px 15px 30px #888888;
+  border-radius: 60px;
+  top: 560px;
+}
+.message{
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  /* height: 81%; */
+  border-radius: 2rem;
+}

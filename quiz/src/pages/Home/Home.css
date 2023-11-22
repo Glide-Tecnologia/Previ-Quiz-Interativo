@@ -200,3 +200,14 @@
   font-family: 'VisbyCF-Bold';
   color: #00335b;
 }
+
+
+.btn-espera{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  z-index: 999;
+}
